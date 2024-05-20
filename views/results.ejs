@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Results</title>
+</head>
+
+<main>
+    <h1>Here are the results for <%=brewery_type %>s in <%=city %>, <%=state %>:</h1>
+    <!-- <p><%=JSON.stringify(breweries) %></p> -->
+    <% for(let brewery of breweries) { %>
+    <h2><%=brewery.name %></h2>
+<pre id="breweries"><%=brewery.street %>
+<%=brewery.city %>, <%=brewery.state %> <%= brewery.postal_code %>
+<%=brewery.phone %>
+<%=brewery.website_url %>
+            </pre>
+    <% } %>
+    <a href="/">Look for more results:</a>
+</main><br><br><br>
+
+<%- include("partials/footer.ejs") %>

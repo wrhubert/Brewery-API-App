@@ -1,0 +1,88 @@
+<%- include("partials/header.ejs") %>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Local Breweries</title>
+</head>
+
+<main>
+    <div class="container">
+        <h1 style="text-align: center; color: rgb(255, 230, 0);">Find a local brewery in your area!  Please type in a city and click to select a state and type of brewery.</h1>
+        <form action="/results" id="form" class="form" method="POST">
+            <label for="city">Enter City:</label>
+            <input type="text" class="form-select" name="city"><br>
+            <label for="state">Select a State:</label>
+            <select class="form-select" name="state">
+              <option value="" data-display="Select">Find Your State:</option>
+              <option value="alabama">Alabama</option>
+              <option value="alaska">Alaska</option>
+              <option value="arizona">Arizona</option>
+              <option value="arkansas">Arkansas</option>
+              <option value="california">California</option>
+              <option value="colorado">Colorado</option>
+              <option value="connecticut">Connecticut</option>
+              <option value="deleware">Deleware</option>
+              <option value="florida">Florida</option>
+              <option value="georgia">Georgia</option>
+              <option value="hawaii">Hawaii</option>
+              <option value="idaho">Idaho</option>
+              <option value="illinois">Illinois</option>
+              <option value="indiana">Indiana</option>
+              <option value="iowa">Iowa</option>
+              <option value="kansas">Kansas</option>
+              <option value="kentucky">Kentucky</option>
+              <option value="louisiana">Louisiana</option>
+              <option value="maine">Maine</option>
+              <option value="maryland">Maryland</option>
+              <option value="massachusetts">Massachusetts</option>
+              <option value="michigan">Michigan</option>
+              <option value="minnesota">Minnesota</option>
+              <option value="mississippi">Mississippi</option>
+              <option value="missouri">Missouri</option>
+              <option value="montana">Montana</option>
+              <option value="nebraska">Nebraska</option>
+              <option value="newhampshire">New Hampshire</option>
+              <option value="newjersey">New Jersey</option>
+              <option value="newmexico">New Mexico</option>
+              <option value="newyork">New York</option>
+              <option value="nortcarolina">North Carolina</option>
+              <option value="northdakota">North Dakota</option>
+              <option value="ohio">Ohio</option>
+              <option value="oklahoma">Oklahoma</option>
+              <option value="oregon">Oregon</option>
+              <option value="pennsylvania">Pennsylvania</option>
+              <option value="rhodeisland">Rhode Island</option>
+              <option value="southcarolina">South Carolina</option>
+              <option value="southdakota">South Dakota</option>
+              <option value="tennessee">Tennessee</option>
+              <option value="texas">Texas</option>
+              <option value="utah">Utah</option>
+              <option value="vermont">Vermont</option>
+              <option value="virginia">Virginia</option>
+              <option value="washington">Washington </option>
+              <option value="westvirginia">West Virginia</option>
+              <option value="wisconsin">Wisconsin</option>
+              <option value="wyoming">Wyoming</option>
+            </select><br>
+            <label for="by_type">Type of Brewery:</label>
+            <select name="brewery_type" class="form-select" >
+              <option value="">Select Brewery Type</option>
+              <option value="micro">Micro</option>
+              <option value="nano">Nano</option>
+              <option value="regional">Regional</option>
+              <option value="brewpub">Brew Pub</option>
+              <option value="large">Large</option>
+              <option value="planning">Planning</option>
+              <option value="bar">Bar</option>
+              <option value="contract">Contract</option>
+              <option value="proprietor">Proprietor</option>
+              <option value="closed">Closed</option>
+            </select>
+            <button type="submit" class="form-submit">Find</button>
+          </form>          
+          <p>Click for the list of brewery types and definitions <a href="/types">here</a>.</p>
+    </div>
+</main>
+
+<%- include("partials/footer.ejs") %>

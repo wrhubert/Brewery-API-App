@@ -1,0 +1,80 @@
+#footer {
+    bottom: 0;
+    margin: 100px, 0, 0, 0;
+    position: fixed; 
+    text-align: center;
+    width: 100%;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-color:lemonchiffon ;
+    background-image: url("../images/Brewery.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;    
+}
+
+.container {
+  background-color: black;
+  border: 1px solid rgb(140, 93, 69);
+  height: 100%;
+  width: 100%;
+  max-width: 40%;
+  padding: 0 10px 20px 10px;
+  margin: 5% auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+    width: 100%;
+    display: grid;
+    font-size: 1.5em;
+    grid-template-columns: 1fr 1fr 80px;
+    grid-column-gap: 10px;
+  }
+
+.form-submit {
+    background-color: gold;
+}
+
+a, h1, h2, h3, label, li, p, pre {
+    color: gold;
+}
+
+tr {
+    display: flex;
+    color: white;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 0px, 10px, 10px, 10px;
+}
+
+#breweries {
+    color: gold;
+    margin: -15px 0 0 0;
+    font-size: 1.5em;
+}
+
+.definition {
+    background: none;
+    border: none;
+    color: gold;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#brewery_list {
+    display: block;   
+}
+
+#brewery_types {
+    margin: -10px 0 -10px 0;
+}
